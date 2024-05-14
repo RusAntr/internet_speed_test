@@ -1,9 +1,8 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:internet_speed_test/internet_speed_test.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('internet_speed_test');
+  const channel = MethodChannel('internet_speed_test');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -18,6 +17,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-//    expect(await InternetSpeedTest.platformVersion, '42');
+  //  expect(await InternetSpeedTest.platformVersion, '42');
   });
 }
